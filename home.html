@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCF</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="py-10 flex mx-auto">
+        <div class="mockup-phone border-primary">
+            <div class="camera"></div>
+                <div class="display">
+                  <div class="artboard artboard-demo phone-4">
+                    <!-- navbar starts here -->
+                    <div class="navbar bg-base-100">
+                        <div class="flex-1">
+                          <a class="btn btn-ghost text-xl">Laxmi Cheat Fund</a>
+                        </div>
+                        <div class="flex-none">
+                          <div class="dropdown dropdown-end">
+                            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                              <div class="w-10 rounded-full">
+                                <img
+                                  alt="Tailwind CSS Navbar component"
+                                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- navbar ends here -->
+
+                    <!-- dashboard starts here -->
+                    <div class="w-full py-5 rounded-none stats bg-primary text-primary-content">
+                        <div class="stat">
+                          <div class="text-white stat-title">Current balance</div>
+                          <div class="stat-value">$ <span id="current-balance" >89400</span></div>
+                          <div class="stat-actions">
+                            <button id="withdraw" class="btn btn-sm">Withdrawal</button>
+                            <button id="deposit" class="btn btn-sm">Deposit</button>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- dashboard ends here -->                                
+                    
+                    <!-- withdrawal form starts here -->
+                    <div id="withdrawal-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 rounded-none">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Amount</span>
+                            </label>
+                            <input id="withdrawal-amount" type="number" placeholder="enter amount" class="input input-bordered" autocomplete="off" />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">PIN</span>
+                            </label>
+                            <input id="pin-no" type="password" placeholder="enter pin" class="input input-bordered" required />
+                            
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="withdraw-btn" class="btn btn-primary">Withdraw</button>
+                          </div>
+                        </form>
+                      </div>
+                    <!--withdrawal form ends here -->
+
+                    <!-- deposit form starts here -->
+                    <div id="deposit-form" class="card bg-base-100 w-full max-w-sm shrink-0 rounded-none">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Amount</span>
+                            </label>
+                            <input id="deposit-amount" type="number" placeholder="enter amount" class="input input-bordered" autocomplete="off" />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">PIN</span>
+                            </label>
+                            <input id="pin-no" type="password" placeholder="enter pin" class="input input-bordered" required />
+                            
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="deposit-btn" class="btn btn-primary">Deposit</button>
+                          </div>
+                        </form>
+                      </div>
+                    <!--deposit form ends here -->
+
+
+                    <!-- ad -->
+                     <div class="bg-[#ff0000] p-2">
+                        <div class="p-2 card flex flex-row card-compact  w-96 rounded-none">
+                            <div class="w-1/2">
+                                <img src="./assets/images (2).jpeg" alt="">
+                            </div>
+                            <div class="w-1/2 card-body">
+                              <h2 class="text-white card-title">Scheme!</h2>
+                              <p class="text-white text-lg">21 din main paisa double?</p>
+                              
+                            </div>
+                            
+                          </div>
+                      
+                     </div>
+                    
+
+                    <!-- artboard ends here -->
+                  </div>
+                  <!-- display ends here -->
+                </div>
+        </div>
+
+       <script src="/js/home.js"></script>    
+    </main>
+</body>
+</html>

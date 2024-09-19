@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="py-10 flex mx-auto">
+        <div class="mockup-phone border-primary">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-4">
+                <div class="hero bg-[#E5E6E6] min-h-screen">
+                    <div class="hero-content flex-col">
+                      <div class="text-center">
+                        <div class="w-full">
+                            <img class="w-2/5 block mx-auto" src="./assets/secure-payment-protection-svgrepo-com.svg" alt="">
+                        </div>
+                        <h1 class="text-3xl font-bold">Laxmi Cheat Fund!</h1>
+                        <p class="py-6">
+                          21 din main paisa double
+                        </p>
+                      </div>
+                      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Phone No</span>
+                            </label>
+                            <input id="phone-no" type="tel" placeholder="enter phone number" class="input input-bordered" autocomplete="off" />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">PIN</span>
+                            </label>
+                            <input id="pin-no" type="password" placeholder="enter pin" class="input input-bordered" required />
+                            <label class="label">
+                              <a href="#" class="label-text-alt link link-hover">Forgot pin?</a>
+                            </label>
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="login-btn" class="btn btn-primary">Login</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+       <script src="/js/login.js"></script>    
+    </main>
+</body>
+</html>

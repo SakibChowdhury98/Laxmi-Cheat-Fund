@@ -18,7 +18,7 @@ const pinNo = document.getElementById('pin-no').value;
 
 
 //validation
-if(pinNo === '123456'){
+if(pinNo === '1111'){
     const currentBalance = document.getElementById('current-balance').innerText;
     const balance = parseFloat(currentBalance);
     const withdraw = parseFloat(withdrawalAmount);

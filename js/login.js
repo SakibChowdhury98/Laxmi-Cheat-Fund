@@ -10,7 +10,7 @@ console.log(phoneNo, pinNo)
 //validate user id
 if(phoneNo === '01746561163' && pinNo === '123456'){
     console.log('login successful');
-    window.location.href='/home.html';
+    window.location.href='./home.html';
 }else{
     alert('login failed');
 }
